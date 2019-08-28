@@ -51,6 +51,14 @@ public class PaintPanel extends JPanel implements MouseMotionListener {
 		this.currentThickness = thickness;
 	}
 
+	public Color getCurrentColor() {
+		return currentColor;
+	}
+
+	public void setCurrentColor(Color currentColor) {
+		this.currentColor = currentColor;
+	}
+
 	
 	
 }

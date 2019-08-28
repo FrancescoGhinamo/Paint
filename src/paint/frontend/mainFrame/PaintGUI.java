@@ -66,6 +66,11 @@ public class PaintGUI extends JFrame implements ActionListener {
 				paintPanel.setCurrentThickness(d.getThickness());
 			}
 		}
+		else if(e.getSource().equals(itemColor)) {
+			ColorDialog d = new ColorDialog(this, true, paintPanel.getCurrentColor());
+			d.setVisible(true);
+			paintPanel.setCurrentColor(d.getColor());
+		}
 
 	}
 
